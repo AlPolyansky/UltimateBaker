@@ -1,0 +1,19 @@
+@function font( $type:$light, $font:$fontMain, $kind:"" ){
+	@return $font + "-" + $type + $kind;
+}
+
+@mixin line($color:red){
+	outline: 1px solid $color;
+}
+
+@function img($name, $path: "../img/"){
+	@return url($path + $name);
+}
+
+@function em($pixels, $context: $sizeDefault) {
+  @return ($pixels / $context) * 1em;
+}
+
+@mixin trans($speed: .2s){
+	transition: $speed;
+}

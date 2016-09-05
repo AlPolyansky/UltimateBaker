@@ -1,0 +1,36 @@
+.search{
+	height: 28px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;	
+	border-radius: 12px;
+	padding-left: 12px;
+	&__text{
+		float: left;
+		width: 100%;
+		border: none;
+		outline: none;
+		font-size: 16px;
+		padding-top: 2px;
+		font-family: font();
+		padding-right: 35px;
+	}
+	&__button{
+		position: absolute;
+		right: 10px;
+		width: 19px;
+		top: 5px;
+		border: none;
+		background-color: inherit;
+		font-size: 14px;
+		vertical-align: top;
+		cursor: pointer;
+		outline: none;
+	}
+}
+
+.header{
+	.search{
+		margin-top: 7px;
+	}
+}

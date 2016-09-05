@@ -1,0 +1,35 @@
+.header{
+	.container{
+		padding-top: 35px;
+		min-height: $headerHeight;
+	}
+	&__logo{
+		@include col(3);
+		@media only screen and (max-device-width : $medium){
+			@include col(2);
+		}
+		@media only screen and (max-device-width : $small){
+			@include col(2);
+		}
+	}
+
+	&__nav{
+		@include col(7);
+		@media only screen and (max-device-width : $medium){
+			@include col(10);
+		}
+		@media only screen and (max-device-width : $small){
+			@include col(10);
+		}
+	}
+
+	&__search{
+		@include col(2);
+		@media only screen and (max-device-width : $medium){
+			@include col(12);
+		}
+		@media only screen and (max-device-width : $small){
+			@include col(12);
+		}
+	}
+}

@@ -1,0 +1,19 @@
+*{
+	box-sizing: border-box;
+}
+
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	font-size: 100%;
+	font-family: font(), Arial, sans-serif;
+}
+
+.container{
+	@include container();
+	@include clear();
+}
+

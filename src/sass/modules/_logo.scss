@@ -1,0 +1,39 @@
+.logo{
+	position: relative;
+	top: -2px;
+	white-space: nowrap;
+	&__img{
+		width: 41px;
+		height: 45px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-left: 14px;
+		margin-right: 14px;
+		@media only screen and (max-device-width : $medium){
+			width: 36px;
+			height: 40px;
+			margin-left: 0;
+		}
+		@media only screen and (max-device-width : $small){
+			width: 19px;
+			height: 23px;
+			margin-left: 0;
+		}
+		
+		&__link{
+
+		}
+	}
+	&__title{
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 24px;
+		font-family: font($bold);
+		@media only screen and (max-device-width : $medium){
+			font-size: 21px;
+		}
+		@media only screen and (max-device-width : $medium){
+			font-size: 12px;
+		}
+	}
+}

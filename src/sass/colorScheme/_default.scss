@@ -1,0 +1,75 @@
+//Color
+$colorExtra: #d65c5c;
+$colorMain : #333;
+
+//Transition
+
+
+
+
+
+//Global
+body{
+	color: $colorMain;
+	&:before{
+		content: "";
+		display: block;
+		background-image: img("Home.jpg");
+		background-repeat: no-repeat;
+		background-position: center 0;
+		opacity: 0.2;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		display: none;
+	}
+}
+
+a{
+	color: $colorMain;
+	text-decoration: none;
+}
+
+
+//Header
+
+.logo{
+	&__title{
+		color: darken(saturate(adjust-hue($colorMain, 0.0000), 0.0000), 20.0000); // #000
+		&__symbol{
+			color: $colorExtra;
+		}
+	}
+}
+
+.nav{
+	.active{
+		border-bottom: 2px solid $colorExtra;
+	}
+	&__list{
+		&__item{
+			&:after{
+				 border-bottom: solid 2px lighten($colorExtra, 10%); 
+			}
+			&:not(.active):hover{
+				&:after{
+					transform: scaleX(1);
+				}
+				//border-bottom: 2px solid lighten($colorExtra, 10%);
+			}
+		}
+	}
+}
+
+.search{
+	border: 1px solid lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
+	&__text{
+		color: lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
+	}
+	&__button{
+		color: lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
+		border-left: 1px solid lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
+	}
+}
