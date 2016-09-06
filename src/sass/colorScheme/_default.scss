@@ -105,6 +105,8 @@ a{
 
 
 
+
+
 	
 	// Flickity style
 	.flickity-prev-next-button{
@@ -124,7 +126,27 @@ a{
 	}
 }
 
-// Titile
+// Why-me
+
+.why-me{
+	&:before{
+		background-color: rgba($colorBase,0.85);
+	}
+}
+
+// Tiles
+.tiles{
+	.wrap{
+		background-color: $colorBase;
+	}
+	&__item{
+		&__ico{
+			color: $colorExtra;
+		}
+	}
+}
+
+// Title
 
 .title{
 	.wrap{

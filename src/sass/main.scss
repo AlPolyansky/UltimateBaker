@@ -19,8 +19,9 @@
 @import "modules/_content.scss";
 @import "modules/_about.scss";
 @import "modules/_footer.scss";
+@import "modules/_why-me.scss";
 
-
+	//Componets
 @import "modules/_logo.scss";
 @import "modules/_nav.scss";
 @import "modules/_search.scss";
@@ -33,6 +34,9 @@
 @import "modules/_avatar.scss";
 @import "modules/_preview.scss";
 @import "modules/_button.scss";
+
+@import "modules/_tiles.scss";
+
 // Color Scheme
 
 @import "colorScheme/_default.scss";

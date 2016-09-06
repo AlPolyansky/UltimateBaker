@@ -1,0 +1,26 @@
+.why-me{
+	width: 100%;
+	position: relative;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+	min-height: 500px;
+	padding: 144px 0;
+	@media only screen and (max-width : $medium){
+		padding: 49px 0;
+	}
+	&:before{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		margin: auto;
+	}
+	.container{
+		position: relative;
+		z-index: 10;
+	}
+}
