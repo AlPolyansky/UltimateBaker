@@ -1,0 +1,21 @@
+.social{
+	text-align: right;
+	@media only screen and(max-width: $medium){
+			text-align: left;
+			display: inline-block;
+			font-size: 20px;
+	}
+	&__item{
+		display: inline-block;
+		margin: 0 5px;
+	}
+	
+	&__link{
+		font-size: 24px;
+		display: block;
+	}
+	&__text{
+		display: block;
+		padding-bottom: 20px;
+	}
+}

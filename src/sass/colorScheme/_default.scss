@@ -1,6 +1,7 @@
 //Color
 $colorExtra: #d65c5c;
 $colorMain : #333;
+$colorBase: #fff;
 
 //Transition
 
@@ -44,6 +45,20 @@ a{
 	}
 }
 
+.light{
+	color: $colorBase;
+	.logo__img{
+		fill: $colorBase;
+	}
+	.logo__title{
+		color: $colorBase;
+	}
+	.nav__link{
+		color: $colorBase;
+	}
+}
+
+
 .nav{
 	.active{
 		border-bottom: 2px solid $colorExtra;
@@ -57,7 +72,6 @@ a{
 				&:after{
 					transform: scaleX(1);
 				}
-				//border-bottom: 2px solid lighten($colorExtra, 10%);
 			}
 		}
 	}
@@ -71,5 +85,14 @@ a{
 	&__button{
 		color: lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
 		border-left: 1px solid lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
+	}
+}
+
+// Footer
+.footer{
+	background-color: $colorMain;
+	color: $colorBase;
+	.social__link{
+		color: $colorBase;
 	}
 }

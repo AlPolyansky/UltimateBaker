@@ -1,6 +1,7 @@
 .search{
 	height: 28px;
 	width: 100%;
+	max-width: $containerWidth;
 	position: relative;
 	overflow: hidden;	
 	border-radius: 12px;
@@ -30,7 +31,14 @@
 }
 
 .header{
+	text-align: center;
 	.search{
 		margin-top: 7px;
+		text-align: center;
+		margin-bottom: 20px;
+		@media only screen and (max-width : $medium){
+			max-width: $small /2;
+			display: inline-block;	
+		}
 	}
 }

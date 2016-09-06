@@ -1,0 +1,12 @@
+.inferance{
+	text-align: center;
+	&__text{
+		display: inline-block;
+		font-size: 18px;
+		line-height: 25px;
+		max-width: 390px;
+	}
+	@media only screen and(max-width: $medium){
+		padding: 20px 0;
+	}
+}

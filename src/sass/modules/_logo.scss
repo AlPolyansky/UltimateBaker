@@ -1,39 +1,52 @@
 .logo{
 	position: relative;
 	top: -2px;
+	text-align: left;
 	white-space: nowrap;
+	@media only screen and (max-width : $medium){
+		text-align: center;
+	}
 	&__img{
-		width: 41px;
-		height: 45px;
+		width: 45px;
+		height: 48px;
 		display: inline-block;
 		vertical-align: middle;
 		margin-left: 14px;
 		margin-right: 14px;
-		@media only screen and (max-device-width : $medium){
-			width: 36px;
-			height: 40px;
-			margin-left: 0;
-		}
-		@media only screen and (max-device-width : $small){
-			width: 19px;
-			height: 23px;
-			margin-left: 0;
-		}
-		
+		white-space: nowrap;
 		&__link{
 
 		}
 	}
 	&__title{
+		white-space: nowrap;
 		display: inline-block;
 		vertical-align: middle;
 		font-size: 24px;
 		font-family: font($bold);
-		@media only screen and (max-device-width : $medium){
-			font-size: 21px;
+	}
+}
+
+
+.header{
+	.logo{
+		padding-bottom: 20px;
+	}
+}
+
+.footer{
+	.logo{
+		@media only screen and (max-width : $medium){
+			text-align: left;
+			margin-bottom: 20px;
+
+			&__img{
+				margin-left: 0;
+			}
 		}
-		@media only screen and (max-device-width : $medium){
-			font-size: 12px;
+		@media only screen and(max-width: $small)
+		{
+			text-align: center;
 		}
 	}
 }

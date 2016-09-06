@@ -5,31 +5,23 @@
 	}
 	&__logo{
 		@include col(3);
-		@media only screen and (max-device-width : $medium){
-			@include col(2);
-		}
-		@media only screen and (max-device-width : $small){
-			@include col(2);
+		@media only screen and (max-width : $medium){
+			@include col(12);
 		}
 	}
 
 	&__nav{
 		@include col(7);
-		@media only screen and (max-device-width : $medium){
-			@include col(10);
-		}
-		@media only screen and (max-device-width : $small){
-			@include col(10);
+		@media only screen and (max-width : $medium){
+			@include col(12);
 		}
 	}
 
 	&__search{
 		@include col(2);
-		@media only screen and (max-device-width : $medium){
+		@media only screen and (max-width : $medium){
 			@include col(12);
-		}
-		@media only screen and (max-device-width : $small){
-			@include col(12);
+
 		}
 	}
 }

@@ -1,0 +1,21 @@
+.phone{
+	@media only screen and(max-width: $medium){
+			text-align: right;
+	}
+	&__text{
+		text-align: right;
+		font-size: 24px;
+		padding-bottom: 31px;
+		@media only screen and(max-width: $medium){
+			font-size: 20px;
+			padding-bottom: 21px;
+		}
+	}
+	&__number{
+		text-align: right;
+		font-size: 30px;
+		@media only screen and(max-width: $medium){
+			font-size: 24px;
+		}
+	}
+}

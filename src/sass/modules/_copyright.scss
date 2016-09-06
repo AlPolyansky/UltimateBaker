@@ -1,0 +1,17 @@
+.copyright{
+	&__text{
+		text-align: center;
+		font-size: 14px;
+		font-family: font(bold);
+	}
+	.fa{
+		padding: 0 5px;
+	}
+}
+
+.footer{
+	.copyright{
+		padding-bottom: 19px;
+		padding-top: 19px;
+	}
+}
