@@ -2,6 +2,7 @@
 $colorExtra: #d65c5c;
 $colorMain : #333;
 $colorBase: #fff;
+$colorDark : #000;
 
 //Transition
 
@@ -87,6 +88,52 @@ a{
 		border-left: 1px solid lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
 	}
 }
+
+// Content
+
+.slider{
+	&__item{
+		color: $colorBase;
+	}
+	&__img{
+		&:after{
+			background-color: rgba($colorDark,0.6);
+		}
+	}
+
+
+
+	
+	// Flickity style
+	.flickity-prev-next-button{
+		background-color: transparent;
+		path{
+			fill: $colorBase;
+		}
+	}
+	.flickity-page-dots{
+		.dot{
+			background-color: transparent;
+			border: 1px solid $colorBase;
+		}
+		.is-selected{
+			background-color: $colorBase;
+		}
+	}
+}
+
+.title{
+	.wrap{
+		border-bottom: 2px solid $colorExtra;
+	}
+}
+.avatar{
+	.wrap{
+		border: 3px solid $colorExtra;
+	}
+}
+
+
 
 // Footer
 .footer{

@@ -1,0 +1,22 @@
+.avatar{
+	.wrap{
+		height: 150px;
+		width: 150px;
+		margin: 0 auto;
+		border-radius: 50%;
+		overflow: hidden;
+		position: relative;
+		z-index: 10;
+	}
+	&__img{
+		width: 150%;
+		border-radius: 50%;
+		position: absolute;
+		z-index: 10;
+		left: 50%;
+  		top: 50%;
+  		z-index: 9;
+  		transform: translate(-50%, -50%);
+	}
+	margin-bottom: 33px;
+}

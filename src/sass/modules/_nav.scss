@@ -8,6 +8,7 @@
 		&__item{
 			display: inline-block;
 			margin: 0 9px;
+			margin-bottom: 10px;
 			&:after {
 			  display:block;
 			  content: ''; 
@@ -42,6 +43,5 @@
 	.nav{
 		display: inline-block;
 		text-align: center;
-		line-height: 40px;
 	}
 }
