@@ -1,0 +1,28 @@
+.preview{
+	@extend .slider;
+	display: none;
+	min-height: 266px;
+	&__item{
+		@extend .slider__item;
+		height: 266px;
+	}
+	&__img{
+		@extend .slider__img;
+	}
+	&__content{
+		@extend .slider__content;	
+  		&__title{
+  			@extend .slider__content__title;
+  			font-size: 36px;
+  		}
+  		&__text{
+  			@extend .slider__content__text;
+  			font-size: 24px;
+  		}
+		
+	}
+
+	@media only screen and (max-width : $medium){
+		display: block;
+	}
+}

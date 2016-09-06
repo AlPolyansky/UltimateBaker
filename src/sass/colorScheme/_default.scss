@@ -89,8 +89,10 @@ a{
 	}
 }
 
-// Content
+//** ----------  Content
 
+
+// Slider
 .slider{
 	&__item{
 		color: $colorBase;
@@ -122,14 +124,36 @@ a{
 	}
 }
 
+// Titile
+
 .title{
 	.wrap{
 		border-bottom: 2px solid $colorExtra;
 	}
 }
+
+// Avatar
+
+
 .avatar{
 	.wrap{
 		border: 3px solid $colorExtra;
+	}
+}
+
+// Button
+
+.button{
+	background-color: $colorExtra;
+	color: $colorBase;
+	border: none;
+	@include trans();
+	&:hover{
+		background-color: darken($colorExtra, 5%);
+	}
+	&:active{
+		background-color: darken($colorExtra, 7%);
+		@include trans(.1s);
 	}
 }
 

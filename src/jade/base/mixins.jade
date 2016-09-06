@@ -1,0 +1,18 @@
+mixin title(text)
+	.title
+		.wrap
+			span.title__text #{text}
+				
+
+mixin avatar(img)
+	.avatar
+		.wrap
+			img.avatar__img(src="img/#{img}", alt="#{img}")
+
+mixin buttonSubmit(text,className)
+	.button_wrap
+		button(type="submit" class=className) #{text}
+
+mixin buttonLink(text,link,className)
+	.button_wrap
+		a(href=link class=className) #{text}
