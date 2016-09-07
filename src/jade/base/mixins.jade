@@ -1,7 +1,14 @@
-mixin title(text)
-	.title
+mixin title(text,tag,className,modificator)
+	-var tagName;
+	-var defaultClassName = "title";
+	-var name;
+	- name = className || defaultClassName
+
+
+	div(class=name ,class=modificator)
 		.wrap
-			h2.title__text!= text
+			- tagName = tag || p
+			#{tagName}.title__text!= text
 				
 				
 
@@ -16,4 +23,23 @@ mixin buttonSubmit(text,className)
 
 mixin buttonLink(text,link,className)
 	.button_wrap
-		a(href=link class=className) #{text}
+		a(href="#{link}" class=className) #{text}
+
+mixin topSliderContent(strong, text)
+	strong.slider__content__title!= strong
+	p.slider__content__text!=text
+
+
+
+mixin sliderItem(image)
+	.slider__item
+		- if (image === undefined)
+			.slider__wrap
+				.slider__content
+					block
+		- else
+			.slider__wrap(style!='background-image: url(img/#{image});')
+				.slider__content
+					block
+
+			

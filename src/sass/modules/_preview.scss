@@ -2,15 +2,17 @@
 	@extend .slider;
 	display: none;
 	min-height: 266px;
+
 	&__item{
 		@extend .slider__item;
 		height: 266px;
 	}
 	&__img{
-		@extend .slider__img;
+		@extend .slider__wrap;
 	}
 	&__content{
-		@extend .slider__content;	
+		@extend .slider__content;
+		@include center();
   		&__title{
   			@extend .slider__content__title;
   			font-size: 36px;

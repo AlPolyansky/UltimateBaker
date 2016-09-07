@@ -1,0 +1,7 @@
+.slider
+	- var n = 1;
+	while n <= 3
+		-var item = n++;
+		+sliderItem("item-" + item + ".jpg")
+			+topSliderContent(title, "Кондитерские изделия <br> в каждый дом")
+	

@@ -1,15 +1,4 @@
-include base/mixins.jade
+extends templates/baseTemplate
 
-doctype html
-head
-	include base/head.jade
-body
-	.wrapper
-		header.header
-			include modules/header.jade
-		.content
-			include modules/content.jade
-		footer.footer
-			include modules/footer.jade
-	script(src="js/libs.js")
-	script(src="js/main.js")
+block content
+	include modules/pages/Home/content

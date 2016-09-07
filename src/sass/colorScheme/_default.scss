@@ -97,7 +97,7 @@ a{
 	&__item{
 		color: $colorBase;
 	}
-	&__img{
+	&__wrap{
 		&:after{
 			background-color: rgba($colorDark,0.6);
 		}
@@ -126,6 +126,39 @@ a{
 	}
 }
 
+
+// Review (slider)
+
+
+.reviews{
+	.slider{
+		&__item{
+			color: $colorMain;
+		}
+		&__wrap{
+			&:after{
+			background-color: transparent;
+			}
+		}
+
+		// Flickity style
+	.flickity-prev-next-button{
+		background-color: transparent;
+		path{
+			fill: $colorMain;
+		}
+	}
+	.flickity-page-dots{
+		.dot{
+			background-color: transparent;
+			border: 1px solid $colorMain;
+		}
+		.is-selected{
+			background-color: $colorMain;
+		}
+	}
+}
+}
 // Why-me
 
 .why-me{
@@ -180,8 +213,27 @@ a{
 }
 
 
+// ar-simular
+.ar-simular{
+	&__img-wrap{
+		&:before{
+			background-color: rgba($colorDark,0.6);
+		}
+	}
+	&__content{
+		color: $colorBase;
+		&__link{
+			color: $colorBase;
+		}
+	}
+}
 
-// Footer
+
+
+
+
+//** ----------  Footer
+
 .footer{
 	background-color: $colorMain;
 	color: $colorBase;

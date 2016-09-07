@@ -16,17 +16,22 @@ body{
 .container{
 	@include container();
 	@include clear();
+	@media only screen and (max-width : $medium){
+		width: 100%;
+		max-width: $medium;
+		padding: 0 15px;
+	}
 }
 
 .wrapper{
 	width: 100%;
-	display: flex;
-	min-height: 100vh;
-  	flex-direction: column;
+	//display: flex;
+	//min-height: 100vh;
+  	//flex-direction: column;
 }
 
 
 .content{
 	/* flex: 1; would be enough but it looks bad in IE */
-  flex: 1 0 auto;
+  //flex: 1 0 auto;
 }
