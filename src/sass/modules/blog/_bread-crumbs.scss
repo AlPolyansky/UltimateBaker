@@ -1,0 +1,37 @@
+.bread-crumbs{
+	font-size: 18px;
+	margin-bottom: 22px;
+	width: 100%;
+	&__list{
+		
+	}
+	&__item{
+		display: inline-block;
+		margin-right: 20px;
+		position: relative;
+		&:after{
+			display: inline;
+			content: "»";
+			position: absolute;
+			right: -15px;
+			top: 4px;
+		}
+		&:last-child{
+			&:after{
+				display: none;
+			}
+		}
+		
+
+	}
+	&__link{
+		display: block;
+		height: 100%;
+		border: 1px solid transparent;
+		padding: 3px 0;
+		@include trans(.1s);
+		&:hover{
+			border-bottom: 1px solid red;
+		}
+	}
+}

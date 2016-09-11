@@ -1,29 +1,23 @@
 +title("Отзывы","h2")
-.slider
-	- var n = 1;
-	while n <= 3
-		-var item = n++;
-		+sliderItem()
-			.container
-				+avatar("woman.jpg")
-				+title("Диана Антуфьева","p", "", "title-name")
-				.reviews__text
-					|Качетсво продукции шикарное.
-					br
-					|Все доставили в срок.
-					br
-					|Очень вкусно и не дорого, рекомендую!
-					p.
-	+sliderItem()
-			.container
-				+title("Отзывы","h2")
-				+avatar("man.jpg")
-				+title("Дима Котовский","p", "", "title-name")
-				.reviews__text
-					|Качетсво продукции шикарное.
-					br
-					|Все доставили в срок.
-					br
-					|Очень вкусно и не дорого, рекомендую!
-					p.
-						 Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида контента, просмотра шрифтов, абзацев, отступов и т.д. Так как цель применения такого текста исключительно демонстрационная, то и смысловую нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при оценке качества восприятия макета.
+.slider.slider-light
+	.slider__item
+		.container
+			+avatar("woman.jpg")
+			+title("Диана Антуфьева","p", "", "title-name")
+			.reviews__text
+				| Качетсво продукции шикарное.
+				br
+				| Все доставили в срок.
+				br
+				| Очень вкусно и не дорого, рекомендую!
+				|  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi, commodi officiis eaque quis suscipit dolorum repellat deleniti assumenda, ad tempore eveniet, harum sit. Fugiat esse ipsum ut autem, magnam nostrum eius assumenda dignissimos atque! Rem suscipit mollitia minima ullam quidem culpa eos, earum iusto, aut doloremque voluptatibus commodi et ipsam aperiam error magni maxime praesentium, nam voluptate tempore! Quas sint placeat illo quae autem ad inventore facilis non eius neque animi sed harum, quaerat corporis maiores eligendi praesentium dolor, quo omnis. Cumque, aperiam necessitatibus ipsa. Tempore delectus nisi nemo eveniet facere ratione, pariatur ab, aliquam, officia totam vel nostrum unde adipisci fugit neque explicabo in voluptates quasi hic fugiat quo incidunt. Distinctio nisi animi laborum vero amet architecto ab optio repellat soluta, quibusdam nemo repudiandae, eius similique tenetur veritatis consequuntur! In voluptas quaerat, assumenda. Ea, voluptas, voluptate? Dolore ut rem omnis dignissimos aspernatur sint unde vitae tenetur illum dolorem iusto quibusdam, optio id sunt. Deserunt, adipisci deleniti culpa mollitia molestiae temporibus excepturi dolore vero et porro optio similique ducimus nulla architecto quam a id! Rem incidunt, repudiandae ratione veritatis et. Porro natus unde reprehenderit provident voluptatibus quibusdam, numquam iure quo impedit, similique adipisci, voluptatem, laboriosam quos facilis voluptatum? Omnis, atque.
+	.slider__item
+		.container
+			+avatar("woman.jpg")
+			+title("Диана Антуфьева","p", "", "title-name")
+			.reviews__text
+				| Качетсво продукции шикарное.
+				br
+				| Все доставили в срок.
+				br
+				| Очень вкусно и не дорого, рекомендую!

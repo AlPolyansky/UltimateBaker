@@ -25,21 +25,21 @@ mixin buttonLink(text,link,className)
 	.button_wrap
 		a(href="#{link}" class=className) #{text}
 
-mixin topSliderContent(strong, text)
-	strong.slider__content__title!= strong
-	p.slider__content__text!=text
+mixin topImageContent(strong, text)
+	strong.top-image__content__title!= strong
+	p.top-image__content__text!=text
 
 
 
-mixin sliderItem(image)
-	.slider__item
+mixin topImageItem(image)
+	.top-image__item
 		- if (image === undefined)
-			.slider__wrap
-				.slider__content
+			.top-image__wrap
+				.top-image__content
 					block
 		- else
-			.slider__wrap(style!='background-image: url(img/#{image});')
-				.slider__content
+			.top-image__wrap(style!='background-image: url(img/#{image});')
+				.top-image__content
 					block
 
 			

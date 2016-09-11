@@ -91,24 +91,14 @@ a{
 
 //** ----------  Content
 
+.wrapper-content{
+	background-color: $colorBase;
+	box-shadow: 0px 4px 5px 0px rgba($colorDark, 0.15);
+	@include clear();
+}
 
-// Slider
-.slider{
-	&__item{
-		color: $colorBase;
-	}
-	&__wrap{
-		&:after{
-			background-color: rgba($colorDark,0.6);
-		}
-	}
-
-
-
-
-
-	
-	// Flickity style
+.slider-dark{
+	// Flickity style  top-img
 	.flickity-prev-next-button{
 		background-color: transparent;
 		path{
@@ -126,22 +116,8 @@ a{
 	}
 }
 
-
-// Review (slider)
-
-
-.reviews{
-	.slider{
-		&__item{
-			color: $colorMain;
-		}
-		&__wrap{
-			&:after{
-			background-color: transparent;
-			}
-		}
-
-		// Flickity style
+.slider-light{
+	// Flickity style  reviws
 	.flickity-prev-next-button{
 		background-color: transparent;
 		path{
@@ -158,6 +134,33 @@ a{
 		}
 	}
 }
+
+
+// TopImage
+.top-image{
+	&__item{
+		color: $colorBase;
+	}
+	&__wrap{
+		&:after{
+			background-color: rgba($colorDark,0.6);
+		}
+	}
+
+
+
+
+
+	
+	
+}
+
+
+// Review (slider)
+
+
+.reviews{
+	
 }
 // Why-me
 
@@ -239,5 +242,41 @@ a{
 	color: $colorBase;
 	.social__link{
 		color: $colorBase;
+	}
+}
+
+
+//**--------------- Blog
+
+.bread-crumbs{
+	border: 1px solid transparent;
+	&__link{
+		&:hover{
+			border-bottom: 1px solid $colorExtra;
+		}
+	}
+}
+.article{
+	&__item{
+		.wrap{
+			&:after{
+				color: $colorBase;
+			}
+		}
+	}
+	&__preview{
+		&:after{
+			background-color: $colorDark;
+		}
+	&__category{
+		border: 3px solid $colorExtra;
+		background-color: $colorBase;
+	}
+	&:hover{
+		.article__preview__category{
+			border: 3px solid $colorBase;
+			background-color: $colorExtra;
+		}
+	}
 	}
 }

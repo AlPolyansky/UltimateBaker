@@ -1,10 +1,12 @@
 // Libs
-@import "libs/_lazyGrid.scss";
+@import "libs/orb/_orb.scss";
 
 // Var
 
 @import "var/_variables.scss";
+@import "var/_class-libs.scss";
 @import "var/_mixins.scss";
+
 
 // Global
 
@@ -12,19 +14,20 @@
 @import "global/_iconFont.scss";
 @import "global/_base.scss";
 
+
+
+//Grid
+@import "grid/_header.scss";
+@import "grid/_content.scss";
+@import "grid/_about.scss";
+@import "grid/_footer.scss";
+@import "grid/_why-me.scss";
+@import "grid/_ar-section.scss";
+@import "grid/_reviews.scss";
+@import "grid/blog";
+
+
 // Modules
-
-	//Grid
-@import "modules/_header.scss";
-@import "modules/_content.scss";
-@import "modules/_about.scss";
-@import "modules/_footer.scss";
-@import "modules/_why-me.scss";
-@import "modules/_ar-section.scss";
-@import "modules/_reviews.scss";
-
-
-	//Componets
 @import "modules/_logo.scss";
 @import "modules/_nav.scss";
 @import "modules/_search.scss";
@@ -32,13 +35,17 @@
 @import "modules/_inference.scss";
 @import "modules/_copyright.scss";
 @import "modules/_social.scss";
+@import "modules/_top-image.scss";
 @import "modules/_slider.scss";
 @import "modules/_title.scss";
 @import "modules/_avatar.scss";
-@import "modules/_preview.scss";
 @import "modules/_button.scss";
 @import "modules/_tiles.scss";
 @import "modules/_ar-simular.scss";
+
+//Blog modulse
+@import "modules/blog/bread-crumbs";
+@import "modules/blog/article";
 
 // Color Scheme
 

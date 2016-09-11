@@ -1,7 +1,14 @@
-section.content__preview
-	include preview
-.top-slider
-	include top-slider
+section.preview
+	.top-image.slider.slider-dark
+		+topImageItem("item-1.jpg")
+			+topImageContent("Ultimate Bakery", "Кулинарные изделия")
+		+topImageItem("item-2.jpg")
+			+topImageContent("Ultimate Bakery", "Кулинарные изделия")
+		+topImageItem("item-3.jpg")
+			+topImageContent("Ultimate Bakery", "Кулинарные изделия")
+	.top-image
+		+topImageItem("item-1.jpg")
+			+topImageContent("Ultimate Bakery", "Кулинарные изделия")
 section.about
 	.container
 		include about.jade
@@ -12,4 +19,4 @@ secton.ar-section
 	.container
 		include ar-section.jade
 secton.reviews
-	include reviews.jade
+	include reviews
