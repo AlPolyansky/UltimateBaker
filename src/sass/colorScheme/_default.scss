@@ -312,3 +312,25 @@ a{
 		}
 	}
 }
+
+.pagination{
+	&__link{
+		
+		&:hover{
+			border-bottom: 1px solid $colorExtra;
+		}
+	}
+	.active{
+		&__link{
+
+		}
+		
+		.pagination__link{
+			color: $colorExtra;
+			border-bottom: 1px solid $colorExtra;
+		}
+	}
+	&__after,&__before{
+		border: 1px solid $colorExtra;
+	}
+}

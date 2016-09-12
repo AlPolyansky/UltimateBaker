@@ -1,14 +1,34 @@
-#blog{
-	.content > .container{
-		display: flex;
-  		justify-content: space-between;
-  		flex-wrap: wrap;
-  		flex-direction: row;
+.no-touch{
+	#blog{
+		.content > .container{
+			display: flex;
+	  		justify-content: space-between;
+	  		flex-wrap: wrap;
+	  		flex-direction: row;
+		}
 	}
 }
 
+
+.flexbox{
+	#blog{
+		@include apply-to(320px,min,768px,max){
+			.content > .container{
+				display: flex;
+		  		justify-content: space-between;
+		  		flex-wrap: wrap;
+		  		flex-direction: row;
+			}
+		}
+	}
+}
+
+
+
 .article-list{
 	order: 1;
+	@include col(12);
+	width: 100%;
 }
 
 .sidebar{
@@ -21,27 +41,41 @@
 	order: 2;
 }
 
-@include apply-to($medium){
+@include apply-to($small){
+	.sidebar{
+		width: 100%;
+		max-width: 100%;
+	}
+	.article__list{
+		width: 100%;
+	}
+
+}
+
+@include apply-to($large){
 
 	.article__list{
 		order: 1;
-		width: 75%;
-		max-width: 75%;
+		@include col(9);
 		padding-right: 15px;
 	}
 	.sidebar{
 		order: 2;
 		width: 100%;
-		max-width: 25%;
+		max-width: 20%;
+		@include col(3);
 		padding-left: 15px;
 	}
 
 	
 	.page-numbers{
 		order: 3;
+		@include col(12);
 		width: 100%;
 	}
 }
+
+
 
 .no-flexbox {
 	@include apply-to($medium){
@@ -82,6 +116,11 @@
 		}
 	}
 	@include apply-to($medium){
+		&__item{
+			@include col(4);
+		}
+	}
+	@include apply-to($large){
 		&__item{
 			@include col(12);
 		}
