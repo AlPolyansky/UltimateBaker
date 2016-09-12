@@ -264,17 +264,25 @@ a{
 			}
 		}
 	}
+	&__icon{
+		background-color: $colorBase;
+	}
 	&__preview{
 		&:after{
 			background-color: $colorDark;
 		}
 	&__category{
-		border: 3px solid $colorExtra;
-		background-color: $colorBase;
+		//border: 3px solid $colorExtra;
+		background-color: $colorExtra;
 	}
+	
 	&:hover{
+		color: $colorBase;
 		.article__preview__category{
-			border: 3px solid $colorBase;
+			border: 2px solid $colorExtra;
+			background-color: $colorBase;
+		}
+		.article__icon{
 			background-color: $colorExtra;
 		}
 	}

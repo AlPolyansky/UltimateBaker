@@ -1,13 +1,27 @@
+
+
 .article{
 	&__list{
 
+	}
+	&__icon{
+		@include center();
+		&:before{
+			@include center(left);
+		}
+		font-size: 46px;
+		display: block;
+		//padding: 20%;
+		height: 65px;
+		width: 65px;
+		border-radius: 50%;
 	}
 	&__item{
 		margin-bottom: 40px;
 		.wrap{
 			overflow: hidden;
-			height: 400px;
 			width: 100%;
+			max-height: 350px;
 			display: block;
 			position: relative;
 			&:after{
@@ -47,13 +61,14 @@
 
 		}
 		&__img{
-			width: 120%;
+			width: 100%;
+			
 			display: block;
-			@include center();
 
 			
 		}
 		&__category{
+			border: 2px solid transparent;
 			@include trans(.3s);
 			@include radius();
 			width: 73px;
@@ -80,3 +95,4 @@
 		}
 	}
 }
+
