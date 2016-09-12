@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-	@include container();
+	@include container(1170px);
 	@include clear();
 	@media only screen and (max-width : $medium){
 		width: 100%;

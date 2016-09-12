@@ -280,3 +280,27 @@ a{
 	}
 	}
 }
+
+.sidebar{
+	&__link{
+		&:before{
+			background-color: $colorExtra;
+		}
+		&:hover{
+			color: $colorExtra;
+			.sidebar__text{
+				border-color: $colorExtra;
+			}
+		}
+	}
+	.active{
+		
+		background-color: $colorExtra;
+		.sidebar__text{
+			color: $colorBase;
+		}
+		[class^="i-"]{
+			color: $colorBase;
+		}
+	}
+}

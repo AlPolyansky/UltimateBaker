@@ -121,6 +121,14 @@ table {
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'CustomFont';
+  src: url("../fonts/CustomFont/CustomFont.eot?58238920");
+  src: url("../fonts/CustomFont/CustomFont.eot?58238920#iefix") format("embedded-opentype"), url("../fonts/CustomFont/CustomFont.woff2?58238920") format("woff2"), url("../fonts/CustomFont/CustomFont.woff?58238920") format("woff"), url("../fonts/CustomFont/CustomFont.ttf?58238920") format("truetype"), url("../fonts/CustomFont/CustomFont.svg?58238920#custom-font") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .fa {
   display: inline-block;
   font: normal normal normal 14px/1 "FontAwesome";
@@ -155,6 +163,94 @@ table {
   content: "\f189";
 }
 
+[class^="i-"]:before, [class*=" i-"]:before {
+  font-family: "CustomFont";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.i-cook-hat:before {
+  content: '\e800';
+}
+
+/* '' */
+.i-cupcake:before {
+  content: '\e801';
+}
+
+/* '' */
+.i-meat:before {
+  content: '\e802';
+}
+
+/* '' */
+.i-pen:before {
+  content: '\e803';
+}
+
+/* '' */
+.i-pie:before {
+  content: '\e804';
+}
+
+/* '' */
+.i-pizza:before {
+  content: '\e805';
+}
+
+/* '' */
+.i-salad:before {
+  content: '\e806';
+}
+
+/* '' */
+.i-soup:before {
+  content: '\e807';
+}
+
+/* '' */
+.i-soup-2:before {
+  content: '\e808';
+}
+
+/* '' */
+.i-article:before {
+  content: '\e80a';
+}
+
+/* '' */
+.i-bread:before {
+  content: '\e80b';
+}
+
+/* '' */
+.i-sushi:before {
+  content: '\e80c';
+}
+
+/* '' */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -171,7 +267,7 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 1170px;
   max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -603,6 +699,7 @@ body {
   -webkit-order: 3;
       -ms-flex-order: 3;
           order: 3;
+  width: 100%;
 }
 
 .page-numbers {
@@ -677,6 +774,47 @@ body {
     max-width: 100%;
   }
   .no-flexbox .page-numbers:after, .no-flexbox .page-numbers:before {
+    display: table;
+    content: "";
+  }
+}
+
+.sidebar__item {
+  float: left;
+  padding-left: 0px;
+  padding-right: 0px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sidebar__item:after, .sidebar__item:before {
+  display: table;
+  content: "";
+}
+
+@media only screen and (min-width: 562px) {
+  .sidebar__item {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    max-width: 33.33333%;
+  }
+  .sidebar__item:after, .sidebar__item:before {
+    display: table;
+    content: "";
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar__item {
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 100%;
+    max-width: 100%;
+  }
+  .sidebar__item:after, .sidebar__item:before {
     display: table;
     content: "";
   }
@@ -1393,10 +1531,10 @@ body {
   transition: 0.3s;
   display: block;
   font-family: "FontAwesome";
+  text-align: center;
   content: "\f00e";
   font-size: 60px;
-  height: 58px;
-  width: 58px;
+  padding: 10px;
   z-index: 2000;
   opacity: 0;
 }
@@ -1457,10 +1595,102 @@ body {
 
 .article__content__text {
   font-size: 24px;
+  line-height: 43px;
 }
 
 .article__content__button {
   float: right;
+}
+
+.sidebar {
+  margin-bottom: 59px;
+}
+
+.sidebar .wrapper-content {
+  overflow: hidden;
+}
+
+.sidebar__item {
+  width: 100%;
+  padding-left: 10%;
+  margin-bottom: 32px;
+}
+
+@media only screen and (min-width: 562px) {
+  .sidebar__item {
+    padding-left: 9px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar__item {
+    padding-left: 22px;
+  }
+}
+
+.sidebar__text {
+  border-bottom: 1px solid transparent;
+}
+
+.sidebar__title {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 27px;
+}
+
+.sidebar__list {
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 480px) {
+  .sidebar__list__item {
+    margin-right: 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar__list__item {
+    margin: 5px 0;
+  }
+}
+
+.sidebar__link {
+  display: table;
+  padding: 5px 0;
+  position: relative;
+}
+
+.sidebar__link:before {
+  content: "";
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  display: block;
+  position: absolute;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  left: -10px;
+  opacity: 0;
+  top: 14px;
+  width: 6px;
+  height: 6px;
+}
+
+.sidebar__link:hover:before {
+  opacity: 1;
+}
+
+.sidebar [class^="i-"] {
+  font-size: 23px;
+  padding-right: 2px;
+  display: table-cell;
+}
+
+.sidebar .active .sidebar__link:before {
+  display: none;
+}
+
+.sidebar .active .sidebar__text {
+  border-bottom: none;
 }
 
 body {
@@ -1669,4 +1899,28 @@ a {
 .article__preview:hover .article__preview__category {
   border: 3px solid #fff;
   background-color: #d65c5c;
+}
+
+.sidebar__link:before {
+  background-color: #d65c5c;
+}
+
+.sidebar__link:hover {
+  color: #d65c5c;
+}
+
+.sidebar__link:hover .sidebar__text {
+  border-color: #d65c5c;
+}
+
+.sidebar .active {
+  background-color: #d65c5c;
+}
+
+.sidebar .active .sidebar__text {
+  color: #fff;
+}
+
+.sidebar .active [class^="i-"] {
+  color: #fff;
 }

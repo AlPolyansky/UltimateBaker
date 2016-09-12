@@ -13,6 +13,7 @@
 
 .sidebar{
 	order: 3;
+	width: 100%;
 }
 
 .page-numbers{
@@ -66,3 +67,24 @@
 	}
 	
 }
+
+
+// Sidebar grid
+
+.sidebar{
+	&__item{
+		//@include line();
+		@include col(12);
+	}
+	@include apply-to(562px){
+		&__item{
+			@include col(4);
+		}
+	}
+	@include apply-to($medium){
+		&__item{
+			@include col(12);
+		}
+	}
+}
+

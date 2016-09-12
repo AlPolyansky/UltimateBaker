@@ -12,6 +12,7 @@
 
 @import "global/_fonts.scss";
 @import "global/_iconFont.scss";
+@import "global/customFont";
 @import "global/_base.scss";
 
 
@@ -25,6 +26,7 @@
 @import "grid/_ar-section.scss";
 @import "grid/_reviews.scss";
 @import "grid/blog";
+
 
 
 // Modules
@@ -46,6 +48,7 @@
 //Blog modulse
 @import "modules/blog/bread-crumbs";
 @import "modules/blog/article";
+@import "modules/blog/sidebar";
 
 // Color Scheme
 

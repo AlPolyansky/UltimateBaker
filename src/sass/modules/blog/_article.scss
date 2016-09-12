@@ -14,11 +14,11 @@
 				@include trans(.3s);
 				display: block;
 				font-family: "FontAwesome";
+				text-align: center;
 				content: "\f00e";
 				@include center();
 				font-size: 60px;
-				height: 58px;
-				width: 58px;
+				padding: 10px;
 				z-index: 2000;
 				opacity: 0;
 
@@ -73,6 +73,7 @@
 		}
 		&__text{
 			font-size: 24px;
+			line-height: 43px;
 		}
 		&__button{
 			float: right;

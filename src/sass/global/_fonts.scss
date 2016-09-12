@@ -29,3 +29,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+  font-family: 'CustomFont';
+  src: url('../fonts/CustomFont/CustomFont.eot?58238920');
+  src: url('../fonts/CustomFont/CustomFont.eot?58238920#iefix') format('embedded-opentype'),
+       url('../fonts/CustomFont/CustomFont.woff2?58238920') format('woff2'),
+       url('../fonts/CustomFont/CustomFont.woff?58238920') format('woff'),
+       url('../fonts/CustomFont/CustomFont.ttf?58238920') format('truetype'),
+       url('../fonts/CustomFont/CustomFont.svg?58238920#custom-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
