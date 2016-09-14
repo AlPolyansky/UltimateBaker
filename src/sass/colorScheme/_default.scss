@@ -365,3 +365,20 @@ a{
 		border: 1px solid $colorExtra;
 	}
 }
+
+
+
+// 404
+
+#error-404{
+	.content{
+		svg{
+			fill: lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 30.5882);
+		}
+		a{
+			color: $colorExtra;
+			text-decoration: underline;
+		}
+	}
+	
+}

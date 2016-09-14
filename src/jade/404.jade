@@ -1,0 +1,28 @@
+extends templates/baseTemplate
+
+
+block title
+	title #{title} - 404
+block wrapper
+	.wrapper#error-404
+		header.header
+			block header
+				include modules/header
+		.content
+			.container
+				.logo
+					include svg/logo__img.jade
+				.text
+					span(style="font-size: 60px;") Упс!
+					br
+					span(style="font-size: 60px;") Ошибка 404
+					br
+					br
+					|Страница не найдена, возможна на переехала или ее не существует
+					br
+					br
+					span(style="font-size: 24px;") Вернуться на 
+					a(href="index") главную
+		footer.footer
+			block footer
+				include modules/footer
