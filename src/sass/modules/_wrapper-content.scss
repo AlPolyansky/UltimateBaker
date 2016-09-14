@@ -22,3 +22,32 @@
 		}
 	}
 }
+
+#contacts{
+	.wrapper-content{
+		margin-top: 26px;
+		margin-bottom: 45px;
+		padding-top: 33px;
+		padding-bottom: 45px;
+		padding-left: 23px;
+		padding-right: 23px;
+		font-size: 22px;
+		@include apply-to($small){
+			margin-top: 114px;
+			margin-bottom: 102px;
+			padding-top: 38px;
+			font-size: 24px;
+			padding: 96px;
+			padding-left: 39px;
+			padding-right: 39px;
+		}
+		@include apply-to($medium){
+			margin-bottom: 119px;
+			padding-left: 98px;
+			padding-right: 98px;
+		}
+		.contacts-text{
+			margin-bottom: 40px;
+		}
+	}
+}

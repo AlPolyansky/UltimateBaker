@@ -29,22 +29,28 @@
 	}
 }
 
+.touch{
+	.simular{
+		&__wrap-link{
+			&:after{
+				opacity: 1;
+			}
+		}
+		&__content{
+			opacity: 1;
+		}
+	}
+}
+
 .simular{
 	text-align: center;
 	position: relative;
 	padding-bottom: 114px;
 	&__wrap-link{
 		display: block;
-		//max-height: 195px;
-		//height: 195px;
-		//min-height: 250px;
 		position: relative;
 		overflow: hidden;
 		@include cloth();
-		@include apply-to($small){
-			//max-height: 120px;
-			//height: 120px;
-		}
 		&:after{
 				opacity: 0;
 				@include trans(.2s);
@@ -73,12 +79,18 @@
 		z-index: 12;
 		opacity: 0;
 		height: 100%;
+		font-size: 18px;
+		line-height: 24px;
 		&__title{
-			font-size: 16px;
+			margin-top: 10px;
+			font-size: 24px;
 			top: 0;
+			@include apply-to($medium){
+				font-size: 16px;
+			}
 		}
 		&__text{
-			font-size: 14px;
+			
 			padding-top: 15px;
 			text-align: left;
 			padding-left: 5%;
@@ -87,7 +99,6 @@
 			width: 100%;
 		}
 		&__link{
-			//position: absolute;
 			width: 100%;
 			&:hover{
 				text-decoration: underline;

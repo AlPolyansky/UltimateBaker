@@ -28,7 +28,8 @@ $(document).ready(function(){
 	}
 
 	addDots($simularTitle, 20);
-	addDots($simularText, 30);
+	addDots($simularText, 60);
+	
 	
 
 

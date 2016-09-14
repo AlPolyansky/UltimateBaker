@@ -247,6 +247,21 @@ a{
 	}
 }
 
+.touch{
+	.simular{
+		&__wrap-link{
+			&:after{
+				background-color: rgba($colorDark,0.7);
+			}
+		}
+	}
+	&__content{
+		color: $colorBase;
+		&__link{
+			color: $colorBase;
+		}
+	}
+}
 
 
 

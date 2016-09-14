@@ -1,0 +1,23 @@
+section.preview
+	.top-image
+		+topImageItem("preview-contacts.jpg")
+			+topImageContent("Ultimate Bakery", "Контакты")
+.container
+	.wrapper-content
+		.contats-title.
+			Для связи со мной вы можете использовать:
+		.contacts-text
+			|Телефон: +7 980 165 33 22
+			br
+			br
+			|Вконтакте: www.vk.com/id19576473
+			br
+			br
+			|Skype: dimakotovsky
+			br
+			br
+			span(style='font-size: 26px;')
+				|Или воспользоваться формой ниже:
+		.contacts-form
+			+form("Оставить сообщение")
+				+buttonLink("Отправить","#","button")
