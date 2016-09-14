@@ -32,14 +32,34 @@
 }
 
 .sidebar{
-	order: 3;
+	order: 4;
 	width: 100%;
+}
+
+.simular{
+	width: 100%;
+	order:3;	
 }
 
 .page-numbers{
 	width: 100%;
 	order: 2;
 }
+
+.single{
+	.comments{
+		width: 100%;
+		order: 2;
+		margin-bottom: 27px;
+		@include apply-to($large){
+			margin-bottom: 47px;
+			margin-left: 0;
+			width: 75%;
+			padding-right: 15px;
+		}
+	}
+}
+
 
 @include apply-to($small){
 	.sidebar{
@@ -126,4 +146,9 @@
 		}
 	}
 }
+
+
+
+
+
 

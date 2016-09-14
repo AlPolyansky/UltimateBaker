@@ -16,3 +16,15 @@
 	}
 	margin-bottom: 33px;
 }
+
+#about{
+	.avatar{
+		margin-bottom: 43px;
+		@include apply-to($small){
+			margin-bottom: 63px;
+		}
+		@include apply-to($medium){
+			margin-bottom: 69px;
+		}
+	}
+}

@@ -42,4 +42,10 @@ mixin topImageItem(image)
 				.top-image__content
 					block
 
-			
+						
+mixin form(textarea)
+	form.message-form(method="POST")
+		input.message-form__text(type="text", placeholder="Ваше Имя")
+		input.message-form__text(type="text", placeholder="Ваш email")
+		textarea.message-form__text(placeholder=textarea)
+		block

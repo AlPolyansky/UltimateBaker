@@ -5,11 +5,15 @@ section.preview
 section.content
 	.container
 		.bread-crumbs
-				include bread-crumbs
+				ul.bread-crumbs__list
+					li.bread-crumbs__item 
+						a.bread-crumbs__link(href="index.html") Главная
+					li.bread-crumbs__item 
+						a.bread-crumbs__link(href="blog.html") Блог
 		.article__list
 			.article__item
 				.wrapper-content
-					a.article__preview(href="#")
+					a.article__preview(href="single.html")
 						.wrap
 							img.article__preview__img(src="img/min-item-1.jpg", alt="item-6")
 						.article__preview__category
@@ -20,10 +24,10 @@ section.content
 						.article__content__text.
 							 Это пенье получается мягкое и тягучее, как десерт Бруни. Важно не предержать его в духовке - оно печется всего 8-10 минут, затем его нужно полностью остудить.
 						.article__content__button
-							+buttonLink("Подробнее","#","button")
+							+buttonLink("Подробнее","single.html","button")
 			.article__item
 				.wrapper-content
-					a.article__preview(href="#")
+					a.article__preview(href="single.html")
 						.wrap
 							img.article__preview__img(src="img/min-item-2.jpg", alt="item-6")
 						.article__preview__category
@@ -34,10 +38,10 @@ section.content
 						.article__content__text.
 							 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos accusamus illum quisquam quis beatae saepe, voluptatibus suscipit, corrupti praesentium earum eius non perspiciatis commodi rerum. Totam hic, quae tempora ea sed, beatae officia quis aut architecto, dolor laborum nulla esse. Laudantium nulla, dolorem id deserunt, rem possimus labore placeat beatae.
 						.article__content__button
-							+buttonLink("Подробнее","#","button")
+							+buttonLink("Подробнее","single.html","button")
 			.article__item
 				.wrapper-content
-					a.article__preview(href="#")
+					a.article__preview(href="single.html")
 						.wrap
 							img.article__preview__img(src="img/min-item-3.jpg", alt="item-6")
 						.article__preview__category
@@ -48,67 +52,9 @@ section.content
 						.article__content__text.
 							 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos accusamus illum quisquam quis beatae saepe, voluptatibus suscipit, corrupti praesentium earum eius non perspiciatis commodi rerum. Totam hic, quae tempora ea sed, beatae officia quis aut architecto, dolor laborum nulla esse. Laudantium nulla, dolorem id deserunt, rem possimus labore placeat beatae.
 						.article__content__button
-							+buttonLink("Подробнее","#","button")
+							+buttonLink("Подробнее","single.html","button")
 
-		aside.sidebar
-			.wrapper-content
-				.sidebar__item
-					.sidebar__title Разное
-					ul.sidebar__list
-						li.sidebar__list__item.active
-							a.sidebar__link(href="#")
-								i.i-article
-								span.sidebar__text Все Статьи
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-pen
-								span.sidebar__text Заметки
-				.sidebar__item
-					.sidebar__title Рецепты
-					ul.sidebar__list
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-bread
-								span.sidebar__text Выпечка
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-pie
-								span.sidebar__text Торты
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-cupcake
-								span.sidebar__text Кондитерские изделия
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-salad
-								span.sidebar__text Салаты
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-pizza
-								span.sidebar__text Пицца
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-soup
-								span.sidebar__text Супы
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-cook-hat
-								span.sidebar__text Другие рецепты
-				.sidebar__item
-					.sidebar__title Кухня
-					ul.sidebar__list
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-meat
-								span.sidebar__text Европейская кухня
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-sushi
-								span.sidebar__text Японская кухня
-						li.sidebar__list__item
-							a.sidebar__link(href="#")
-								i.i-soup-2
-								span.sidebar__text Русская кухня
+		include sidebar
 
 		.page-numbers
 			include pagination

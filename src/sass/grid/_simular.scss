@@ -1,0 +1,29 @@
+.simular{
+	&__list{
+		width: 100%;
+		display: block;
+	}
+}
+
+.ar-section{
+	.simular{
+		&__item{
+			@include col(12);
+			@include apply-to($small){
+				@include col(6);
+			}
+		}
+	}
+}
+
+.single{
+	.simular{
+		@include col(12);
+		&__item{
+			@include col(12);
+			@include apply-to($medium){
+				@include col(4);
+			}
+		}
+	}
+}

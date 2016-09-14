@@ -120,3 +120,16 @@
 	}
 }
 
+.single{
+	.wrapper-content{
+		padding-bottom: 52px;
+		@include apply-to($small){
+			padding-bottom: 92px;
+		}
+		@include apply-to($medium){
+			padding-bottom: 139px;
+		}
+		
+	}
+}
+

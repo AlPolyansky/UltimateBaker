@@ -1,62 +1,76 @@
 .ar-section__wrap
 	.ar-section__wrap_item
-		.ar-simular
-			h3.ar-simular__title Cвежие рецеты
-			.ar-simular__list
-				a.ar-simular__img-wrap(href="https://www.google.com")
-					img.ar-simular__img(src="img/sim-1.jpg" alt="sim-1")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин1111111
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat iusto vitae minus eius eaque explicabo dignissimos similique quibusdam, eos molestiae ad soluta, consectetur veniam ex.
-						span.ar-simular__content__link Читать подробнее
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-2.jpg" alt="sim-2")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой...
-						span.ar-simular__content__link Читать подробнее
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-3.jpg" alt="sim-3")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой...
-						span.ar-simular__content__link(href="#") Читать подробнее
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-4.jpg" alt="sim-4")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой...
-						span.ar-simular__content__link(href="#") Читать подробнее
+
+
+		h3.ar-section__title Cвежие рецеты
+		.simular
+			.simular__list
+				.simular__item
+					a.simular__wrap-link(href="single.html")
+						img.simular__img(src="img/responsive/sim-1.jpg" alt="sim-1")
+						.simular__content
+							h4.simular__content__title Королевский мафина
+							p.simular__content__text.
+								Рецепт отменного мафина, очень простойРецепт отменного мафина, очень простойРецепт отменного мафина, очень простойРецепт отменного мафина, очень простой
+							span.simular__content__link Читать подробнее
+				.simular__item
+					a.simular__wrap-link(href="single.html")
+						img.simular__img(src="img/responsive/sim-2.jpg" alt="sim-2")
+						.simular__content
+							h4.simular__content__title Королевский мафина
+							p.simular__content__text Рецепт отменного мафина, очень простой
+							span.simular__content__link Читать подробнее
+				.simular__item
+					a.simular__wrap-link(href="single.html")
+						img.simular__img(src="img/responsive/sim-3.jpg" alt="sim-3")
+						.simular__content
+							h4.simular__content__title Королевский мафина
+							p.simular__content__text Рецепт отменного мафина, очень простой
+							span.simular__content__link Читать подробнее
+				.simular__item
+					a.simular__wrap-link(href="single.html")
+						img.simular__img(src="img/responsive/sim-4.jpg" alt="sim-4")
+						.simular__content
+							h4.simular__content__title Королевский мафина
+							p.simular__content__text Рецепт отменного мафина, очень простой
+							span.simular__content__link Читать подробнее
+
+
 	.ar-section__wrap_item
 		.ar-section__item
 		.ar-section_logo
 			include ../../../svg/logo__img.jade
-		+buttonLink("Открыть блог", "#", "button")
+		+buttonLink("Открыть блог", "blog.html", "button")
 	.ar-section__wrap_item
 		.ar-simular
-			h3.ar-simular__title Популярные статья
-			.ar-simular__list
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-1.jpg" alt="sim-1")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин1111111
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat iusto vitae minus eius eaque explicabo dignissimos similique quibusdam, eos molestiae ad soluta, consectetur veniam ex.
-						span.ar-simular__content__link Читать подробнее
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-2.jpg" alt="sim-2")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой...
-						span.ar-simular__content__link Читать подробнее
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-3.jpg" alt="sim-3")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой...
-						span.ar-simular__content__link(href="#") Читать подробнее
-				a.ar-simular__img-wrap(href="#")
-					img.ar-simular__img(src="img/sim-4.jpg" alt="sim-4")
-					.ar-simular__content
-						h4.ar-simular__content__title Королевский мафин
-						p.ar-simular__content__text Рецепт отменного мафина, очень простой...
-						span.ar-simular__content__link(href="#") Читать подробнее
+			h3.ar-section__title Популяные статьи
+			.simular
+				.simular__list
+					.simular__item
+						a.simular__wrap-link(href="single.html")
+							img.simular__img(src="img/responsive/sim-1.jpg" alt="sim-1")
+							.simular__content
+								h4.simular__content__title Королевский мафина
+								p.simular__content__text Рецепт отменного мафина, очень простой
+								span.simular__content__link Читать подробнее
+					.simular__item
+						a.simular__wrap-link(href="single.html")
+							img.simular__img(src="img/responsive/sim-2.jpg" alt="sim-2")
+							.simular__content
+								h4.simular__content__title Королевский мафина
+								p.simular__content__text Рецепт отменного мафина, очень простой
+								span.simular__content__link Читать подробнее
+					.simular__item
+						a.simular__wrap-link(href="single.html")
+							img.simular__img(src="img/responsive/sim-3.jpg" alt="sim-3")
+							.simular__content
+								h4.simular__content__title Королевский мафина
+								p.simular__content__text Рецепт отменного мафина, очень простой
+								span.simular__content__link Читать подробнее
+					.simular__item
+						a.simular__wrap-link(href="single.html")
+							img.simular__img(src="img/responsive/sim-4.jpg" alt="sim-4")
+							.simular__content
+								h4.simular__content__title Королевский мафина
+								p.simular__content__text Рецепт отменного мафина, очень простой
+								span.simular__content__link Читать подробнее

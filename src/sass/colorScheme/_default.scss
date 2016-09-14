@@ -94,7 +94,20 @@ a{
 .wrapper-content{
 	background-color: $colorBase;
 	box-shadow: 0px 4px 5px 0px rgba($colorDark, 0.15);
+	border: 1px solid lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
 	@include clear();
+}
+
+#about{
+	.wrapper-content{
+		border: none;
+	}
+}
+
+.message-form__text{
+	background-color: $colorBase;
+	box-shadow: 0px 4px 5px 0px rgba($colorDark, 0.15);
+	border: 1px solid lighten(saturate(adjust-hue(#333333, 0.0000), 0.0000), 56.0784); //#c2c2c2;
 }
 
 .slider-dark{
@@ -216,12 +229,15 @@ a{
 }
 
 
-// ar-simular
-.ar-simular{
-	&__img-wrap{
-		&:before{
-			background-color: rgba($colorDark,0.6);
+// simular
+.simular{
+	&__wrap-link{
+		&:hover{
+			&:after{
+				background-color: rgba($colorDark,0.6);
+			}
 		}
+		
 	}
 	&__content{
 		color: $colorBase;

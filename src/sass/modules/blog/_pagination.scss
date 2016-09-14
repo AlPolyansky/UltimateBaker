@@ -1,7 +1,13 @@
 .pagination{
 	text-align: center;
 	font-size: 20px;
-	margin-bottom: 150px;
+	margin-bottom: 50px;
+	@include apply-to($small){
+		margin-bottom: 75px;
+	}
+	@include apply-to($medium){
+		margin-bottom: 150px;
+	}
 	.active{
 		font-size: 24px;
 	}
@@ -17,7 +23,6 @@
 	&__after,&__before{
 		border-radius: 50%;
 		display: block;
-		border: 1px solid red;
 		height: 32px;
 		width: 32px;
 		position: relative;

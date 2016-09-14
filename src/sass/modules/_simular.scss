@@ -1,0 +1,100 @@
+.ar-section{
+	.simular{
+		&__img{
+			@include apply-to($medium){
+				width: 100%;
+			}
+		}
+		&__wrap-link{
+			@include apply-to($small){
+				max-height: 120px;
+			}
+		}
+	}
+}
+
+.single{
+
+	.simular{
+		&__title{
+			font-size: 36px;
+			margin-bottom: 38px;
+		}
+		&__item{
+			//min-height: 196px;
+		}
+		&__wrap-link{
+			max-height: 200px;
+		}
+	}
+}
+
+.simular{
+	text-align: center;
+	position: relative;
+	padding-bottom: 114px;
+	&__wrap-link{
+		display: block;
+		//max-height: 195px;
+		//height: 195px;
+		//min-height: 250px;
+		position: relative;
+		overflow: hidden;
+		@include cloth();
+		@include apply-to($small){
+			//max-height: 120px;
+			//height: 120px;
+		}
+		&:after{
+				opacity: 0;
+				@include trans(.2s);
+			}
+			&:hover{
+				&:after{
+					opacity: 1;
+				}
+				& .simular__content{
+					opacity: 1;
+				}
+			}
+	}
+	&__img{
+		width: 100%;
+		display: block;
+		object-fit: contain;
+	}
+
+	&__content{
+		top: 0;
+		text-align: center;
+		padding-top: 12px;
+		position: absolute;
+		width: 100%;
+		z-index: 12;
+		opacity: 0;
+		height: 100%;
+		&__title{
+			font-size: 16px;
+			top: 0;
+		}
+		&__text{
+			font-size: 14px;
+			padding-top: 15px;
+			text-align: left;
+			padding-left: 5%;
+			padding-right: 5%;
+			margin-bottom: 10%;
+			width: 100%;
+		}
+		&__link{
+			//position: absolute;
+			width: 100%;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+}
+
+

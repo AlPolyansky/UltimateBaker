@@ -1,7 +1,7 @@
 $(document).ready(function(){
   var 
-		$simularTitle = $(".ar-simular__content__title"),
-		$simularText = $(".ar-simular__content__text");
+		$simularTitle = $(".simular__content__title"),
+		$simularText = $(".simular__content__text");
 
 
 	$('.slider').flickity({

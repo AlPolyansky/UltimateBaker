@@ -2,12 +2,17 @@
 	&__wrap{
 		padding-top: 165px;
 		@include clear();
-		padding-bottom: 114px;
 		&_item{
-			@include col(4);
-			@media only screen and (max-width : $medium){
-				@include col(12);
+			@include col(12);
+			margin-bottom: 30px;
+			@include apply-to($medium){
+				margin-bottom: 50px;
+			}
+			@include apply-to($large){
+				@include col(4);
+				margin-bottom: 120px;
 			}
 		}
 	}
 }
+

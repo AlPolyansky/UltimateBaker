@@ -16,6 +16,7 @@ body{
 .container{
 	@include container(1170px);
 	@include clear();
+	@include trans(.2s);
 	@media only screen and (max-width : $medium){
 		width: 100%;
 		max-width: $medium;
@@ -34,4 +35,9 @@ body{
 .content{
 	/* flex: 1; would be enough but it looks bad in IE */
   //flex: 1 0 auto;
+}
+
+img{
+	width: 100%;
+	height: auto;
 }

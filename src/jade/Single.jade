@@ -1,0 +1,16 @@
+extends templates/baseTemplate
+
+
+block title
+	title #{title} - Blog Single
+block wrapper
+	.wrapper.single#blog
+		header.header
+			block header
+				include modules/header
+		.content
+			block content
+				include modules/pages/Blog/single-content
+		footer.footer
+			block footer
+				include modules/footer

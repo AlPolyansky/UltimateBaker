@@ -1,0 +1,16 @@
+extends templates/baseTemplate
+
+
+block title
+	title #{title} - About
+block wrapper
+	.wrapper#about
+		header.header
+			block header
+				include modules/header
+		.content
+			block content
+				include modules/pages/About/about-content
+		footer.footer
+			block footer
+				include modules/footer

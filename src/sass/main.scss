@@ -25,6 +25,7 @@
 @import "grid/_why-me.scss";
 @import "grid/_ar-section.scss";
 @import "grid/_reviews.scss";
+@import "grid/_simular.scss";
 @import "grid/blog";
 
 
@@ -43,13 +44,16 @@
 @import "modules/_avatar.scss";
 @import "modules/_button.scss";
 @import "modules/_tiles.scss";
-@import "modules/_ar-simular.scss";
+@import "modules/_simular.scss";
+@import "modules/_form.scss";
+@import "modules/wrapper-content";
 
 //Blog modulse
 @import "modules/blog/bread-crumbs";
 @import "modules/blog/article";
 @import "modules/blog/sidebar";
 @import "modules/blog/pagination";
+
 
 //Color Scheme
 
